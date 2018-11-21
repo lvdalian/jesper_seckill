@@ -3,7 +3,7 @@ package edu.nyist.seckill.exception;
 import edu.nyist.seckill.result.CodeMsg;
 
 /**
- * Created by jiangyunxiong on 2018/5/22.
+ * @author rogers
  * <p>
  * 自定义全局异常类
  */

@@ -4,7 +4,7 @@ import edu.nyist.seckill.bean.User;
 import lombok.Data;
 
 /**
- * Created by jiangyunxiong on 2018/5/29.
+ * @author rogers
  *
  * 消息体
  */

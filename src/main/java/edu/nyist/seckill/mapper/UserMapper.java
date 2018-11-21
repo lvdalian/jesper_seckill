@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 /**
- * Created by jiangyunxiong on 2018/5/21.
+ * @author rogers
  */
 @Repository
 @Mapper
