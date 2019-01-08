@@ -52,7 +52,7 @@ public class SeckillController implements InitializingBean {
     RateLimiter rateLimiter = RateLimiter.create(10);
 
     //做标记，判断该商品是否被处理过了
-    private HashMap<Long, Boolean> localOverMap = new HashMap<Long, Boolean>();
+    private HashMap<Long, Boolean> localOverMap = new HashMap<>();
 
     /**
      * GET POST
