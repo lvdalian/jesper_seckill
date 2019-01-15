@@ -3,7 +3,7 @@ package edu.nyist.seckill.bean;
 import lombok.Data;
 
 /**
- * Created by jiangyunxiong on 2018/5/22.
+ * @author Rogers
  */
 @Data
 public class SeckillOrder {

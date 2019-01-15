@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Created by jiangyunxiong on 2018/5/22.
+ * @author Rogers
  */
 @Service
 public class UserArgumentResolver implements HandlerMethodArgumentResolver {

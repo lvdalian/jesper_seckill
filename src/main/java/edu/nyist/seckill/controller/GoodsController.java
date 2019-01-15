@@ -1,6 +1,5 @@
 package edu.nyist.seckill.controller;
 
-import com.alibaba.druid.util.StringUtils;
 import edu.nyist.seckill.bean.User;
 import edu.nyist.seckill.redis.GoodsKey;
 import edu.nyist.seckill.redis.RedisService;
@@ -9,6 +8,7 @@ import edu.nyist.seckill.service.GoodsService;
 import edu.nyist.seckill.service.UserService;
 import edu.nyist.seckill.vo.GoodsDetailVo;
 import edu.nyist.seckill.vo.GoodsVo;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -56,7 +56,7 @@ public class GoodsController {
 
         //取缓存
         String html = redisService.get(GoodsKey.getGoodsList, "", String.class);
-        if (!StringUtils.isEmpty(html)) {
+        if (StringUtils.isNotEmpty(html)) {
             return html;
         }
         List<GoodsVo> goodsList = goodsService.listGoodsVo();
@@ -68,7 +68,7 @@ public class GoodsController {
                 request.getServletContext(), request.getLocale(), model.asMap(), applicationContext);
         html = thymeleafViewResolver.getTemplateEngine().process("goods_list", ctx);
 
-        if (!StringUtils.isEmpty(html)) {
+        if (StringUtils.isNotEmpty(html)) {
             redisService.set(GoodsKey.getGoodsList, "", html);
         }
         //结果输出

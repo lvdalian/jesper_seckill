@@ -6,7 +6,6 @@ import java.util.Date;
 
 /**
  * @author rogers
- * @version 1.0
  */
 @Data
 public class User {

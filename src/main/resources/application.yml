@@ -1,0 +1,51 @@
+server:
+  port: 8888
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/seckill?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  resources:
+    add-mappings: true
+    cache-period: 3600
+    chain.cache: true
+    chain.enabled: true
+    chain.gzipped: true
+    chain.html-application-cache: true
+    static-locations: classpath:/static/
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    listener:
+      simple:
+        concurrency: 10
+        max-concurrency: 10
+        prefetch: 1
+        auto-startup: true
+        default-requeue-rejected: true
+    template:
+      retry:
+        enabled: true
+        initial-interval: 1000
+        max-attempts: 3
+        max-interval: 10000
+        multiplier: 1.0
+redis:
+  host: 127.0.0.1
+  port: 6379
+  timeout: 10
+  pool-max-total: 1000
+  poolMaxIdle: 500
+  poolMaxWait: 500
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 3000

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * Created by jiangyunxiong on 2018/5/22.
+ * @author Rogers
  */
 @Service
 public class GoodsService {

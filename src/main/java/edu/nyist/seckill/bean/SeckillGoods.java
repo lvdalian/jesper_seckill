@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * Created by jiangyunxiong on 2018/5/22.
+ * @author Rogers
  */
 @Data
 public class SeckillGoods {

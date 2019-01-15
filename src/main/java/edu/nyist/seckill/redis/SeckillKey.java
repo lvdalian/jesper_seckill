@@ -1,7 +1,7 @@
 package edu.nyist.seckill.redis;
 
 /**
- * Created by jiangyunxiong on 2018/5/29.
+ * @author Rogers
  */
 public class SeckillKey extends BasePrefix {
     private SeckillKey(String prefix) {

@@ -1,7 +1,7 @@
 package edu.nyist.seckill.redis;
 
 /**
- * Created by jiangyunxiong on 2018/5/21.
+ * @author Rogers
  *
  * 缓冲key前缀
  */
