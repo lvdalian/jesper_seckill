@@ -17,7 +17,7 @@ import java.awt.image.BufferedImage;
 public class CodeController {
 
     @Autowired
-    private Producer captchaProducer;
+    Producer captchaProducer;
 
     @RequestMapping("/kaptcha")
     public void getKaptchaImage(HttpServletRequest request, HttpServletResponse response) throws Exception {
